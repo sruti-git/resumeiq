@@ -1,0 +1,44 @@
+JOHN DOE
+Email: johndoe@email.com | Phone: +1-555-0123
+LinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe
+
+SUMMARY
+Passionate software developer with 2 years of experience building web applications.
+Strong interest in data science and machine learning.
+
+TECHNICAL SKILLS
+Languages:     Python, JavaScript, SQL, HTML, CSS
+Frameworks:    React, Node.js, Flask, Express
+Libraries:     Pandas, NumPy, Matplotlib, Scikit-learn
+Tools:         Git, Docker, Linux, Jupyter, VS Code
+Databases:     MongoDB, PostgreSQL
+Cloud:         AWS (basic)
+
+EDUCATION
+B.Tech in Computer Science Engineering
+XYZ University, 2022 – 2026
+
+EXPERIENCE
+Software Development Intern | ABC Tech, June–August 2024
+- Built REST APIs using Node.js and Express
+- Worked with MongoDB and PostgreSQL databases
+- Used Git for version control and collaborated via GitHub
+- Created data visualizations using Matplotlib and Seaborn
+
+PROJECTS
+1. Student Grade Prediction System (Python, Scikit-learn, Pandas)
+   - Used regression and classification models to predict grades
+   - Performed feature engineering and data cleaning
+   - Achieved 88% accuracy on test set
+
+2. E-commerce Web App (React, Node.js, MongoDB)
+   - Full stack CRUD application with user authentication
+   - Deployed on AWS EC2
+   - Responsive design with CSS and Tailwind CSS
+
+CERTIFICATIONS
+- Python for Everybody – Coursera
+- Machine Learning – Coursera (Andrew Ng)
+
+SOFT SKILLS
+Problem Solving, Team Collaboration, Communication, Agile methodology

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Analysis Results – ResumeIQ</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+</head>
+<body class="results-page">
+
+  <div class="bg-grid"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">ResumeIQ</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="upload.html">Upload</a>
+      <a href="job-roles.html">Job Roles</a>
+    </div>
+  </nav>
+
+  <main class="results-main">
+
+    <!-- Hero score section -->
+    <section class="score-hero">
+      <div class="score-hero-inner">
+        <div class="result-meta">
+          <span class="result-badge">Analysis Complete</span>
+          <h1>Your Resume Report</h1>
+          <p class="result-subtitle">
+            Role: <strong id="displayRole">—</strong>
+          </p>
+        </div>
+
+        <!-- Circular score meter -->
+        <div class="score-ring-wrap">
+          <svg class="score-ring" viewBox="0 0 200 200">
+            <circle class="ring-bg" cx="100" cy="100" r="80"/>
+            <circle class="ring-fill" id="ringFill" cx="100" cy="100" r="80"
+              stroke-dasharray="502.65"
+              stroke-dashoffset="502.65"/>
+          </svg>
+          <div class="score-center">
+            <div class="score-number" id="scoreNumber">0%</div>
+            <div class="score-label">Match Score</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Score interpretation badge -->
+      <div class="score-verdict" id="scoreVerdict">
+        <span class="verdict-icon" id="verdictIcon">🔍</span>
+        <span id="verdictText">Analyzing...</span>
+      </div>
+    </section>
+
+    <!-- Progress bar (alternate linear view) -->
+    <section class="results-grid">
+
+      <!-- Match Score Bar -->
+      <div class="result-card card-full">
+        <div class="card-header">
+          <span class="card-icon">📊</span>
+          <h2>Match Score Breakdown</h2>
+        </div>
+        <div class="score-bar-wrap">
+          <div class="score-bar-track">
+            <div class="score-bar-fill" id="scoreBarFill" style="width: 0%"></div>
+            <div class="score-bar-label" id="scoreBarLabel">0%</div>
+          </div>
+          <div class="score-scale">
+            <span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Matched Skills -->
+      <div class="result-card">
+        <div class="card-header">
+          <span class="card-icon">✅</span>
+          <h2>Matched Skills</h2>
+          <span class="card-count matched-count" id="matchedCount">0</span>
+        </div>
+        <div class="skills-container" id="matchedSkills">
+          <p class="empty-state">No matched skills found.</p>
+        </div>
+      </div>
+
+      <!-- Missing Skills -->
+      <div class="result-card">
+        <div class="card-header">
+          <span class="card-icon">❌</span>
+          <h2>Missing Skills</h2>
+          <span class="card-count missing-count" id="missingCount">0</span>
+        </div>
+        <div class="skills-container" id="missingSkills">
+          <p class="empty-state">No missing skills found.</p>
+        </div>
+      </div>
+
+      <!-- Skill Gap Analysis -->
+      <div class="result-card card-full">
+        <div class="card-header">
+          <span class="card-icon">🧩</span>
+          <h2>Skill Gap Analysis</h2>
+        </div>
+        <div class="gap-analysis" id="gapAnalysis">
+          <p class="empty-state">Loading analysis...</p>
+        </div>
+      </div>
+
+      <!-- Recommendations -->
+      <div class="result-card card-full">
+        <div class="card-header">
+          <span class="card-icon">🚀</span>
+          <h2>Learning Recommendations</h2>
+        </div>
+        <div class="recommendations-grid" id="recommendations">
+          <p class="empty-state">Loading recommendations...</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Action buttons -->
+    <div class="results-actions">
+      <a href="upload.html" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+        Analyze Another Resume
+      </a>
+      <button class="btn-secondary" onclick="window.print()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        Print Report
+      </button>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>Built with ♥ as a college project · ResumeIQ 2025</p>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="results.js"></script>
+</body>
+</html>
